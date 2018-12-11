@@ -1,0 +1,22 @@
+<div class="section-2">
+    <div class="box-section-2">
+        <!--<div class="col1-section2">
+            <img src="assets/img/ga2.jpg"/>
+        </div>
+        <div class="col2-section2">
+            <h2>GA 1 2017</h2>
+            <span>Gia:500,000 dong</span>
+            <p>Even this simple code snippet demonstrates that scripts can both query and change the DOM as well as the CSSOM. (For the sake of simplicity, assume that elem holds a reference to some particular HTML element on the page.)</p>
+            <button class="btn-them">Thêm giỏ hàng</button>
+            <button class="btn-gio-hang">Mua hàng</button>
+            
+        </div>-->
+      <div *ngIf="user">
+        <img src="{{user.avatar}}"/>
+        <p>Name: {{user.name}}</p>
+        <p>CreatedAt: {{user.createdAt}}</p>
+        <a routerLink="/user-edit/{{user.id}}">Edit</a>
+        
+      </div>
+    </div>
+</div>

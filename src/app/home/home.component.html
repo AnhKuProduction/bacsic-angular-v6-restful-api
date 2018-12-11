@@ -1,0 +1,35 @@
+
+       <div class="section-1">
+           <nav>
+               <ul>
+                  <!--<li *ngFor="let item of products"><a routerLink="../{{item.link}}"><img src="{{item.img}}"/></a>
+                        <a href="#"><span>{{item.title}} - {{item.price | number}} VNĐ</span></a>
+                        <button>Thêm giỏ hàng</button>
+                    </li>-->
+                   <!-- <li><a href="#"><img src="assets/img/ga2.jpg"/></a>
+                        <a href="#"><span>Ga 1 2017</span></a>
+                        <button>Thêm giỏ hàng</button>
+                   </li>
+                   <li><a href="#"><img src="assets/img/ga.jpg"/></a>
+                        <a href="#"><span>Ga 1 2018</span></a>   
+                        <button>Thêm giỏ hàng</button> 
+                    </li>
+                   <li><a href="#"><img src="assets/img/ga2.jpg"/></a>
+                        <a href="#"><span>Ga 1 2019</span></a>
+                        <button>Thêm giỏ hàng</button>
+                   </li> -->
+               </ul>
+           </nav>
+           <h1>Get từ server</h1>
+           <a routerLink="/user-add">Add User</a>
+           <nav>
+               <ul>
+                   <li *ngFor="let user of users">
+                       <img src="{{user.avatar}}"/><br/>
+                        {{user.name}} - {{user.createdAt}}
+                        <br/>
+                        <a routerLink = "../{{user.id}}">Xem</a>
+                   </li>
+               </ul>
+           </nav>
+       </div>

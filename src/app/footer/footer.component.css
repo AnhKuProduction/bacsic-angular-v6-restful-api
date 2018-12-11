@@ -1,0 +1,9 @@
+footer{
+    width: 100%;
+    clear: both;
+}
+footer .box-footer{width: 100%;}
+footer .box-footer .footer-1{width: 100%;text-align: center;padding: 8px 0px;color:#fff;background: #000;
+position: fixed;
+bottom: 0;
+}

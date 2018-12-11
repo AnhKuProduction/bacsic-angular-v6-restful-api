@@ -1,0 +1,11 @@
+<div class="user-edit" *ngIf="user">
+    <p>Name:<input type="text" [(ngModel)]="user.name"  /></p>
+    <p>CreatedAt:<input type="date" [ngModel] ="user.createdAt | date:'yyyy-MM-dd'" (ngModelChange)="user.createdAt = $event"></p>
+    <p>Avatar:<input type="file" (change)="readUrl($event)"/></p>
+     <img [src]="user.avatar"/>
+
+     <button (click)="updateUser()">Update user</button><span>------</span>
+     <button (click)="deleteUser()">Delete user</button>
+    <!-- {{user.createdAt | date: 'dd/MM/y'}} -->
+    <!--{{user.createdAt | date: 'dd/MM/y H:m:s'}}-->
+</div>

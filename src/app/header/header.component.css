@@ -1,0 +1,15 @@
+header{
+    width:100%;
+}
+header .box-header{
+    width: 100%;
+}
+header .box-header .box-header-1{width:100%;background: #000;}
+.box-header-1 nav{width:900px;margin:0px auto;}
+.box-header-1 nav ul li{list-style: none;display: inline-block;}
+.box-header-1 nav ul li a{padding:10px;display: block;text-decoration: none;color:#fff;font-size: 1,4rem;}
+.box-header-1 nav ul li a:hover{background: #fff;color:#000;}
+
+.box-header-2{width:900px;margin: auto;}
+.box-header-2 nav{width:100%;}
+.box-header-2 nav ul li{list-style: none;}
